@@ -62,74 +62,106 @@ void loop()
             if (modePushCounter == 0) {
              switch (i) {
               case 0: 
-                Keyboard.press('a');
+//                cortar
+                Serial.println("Cortar");
+                Keyboard.press(KEY_LEFT_CTRL);  
+                Keyboard.print('x');
               break;            
               case 1: 
-                Keyboard.press('a');
+//                Captura de pantalla
+                  Keyboard.press (KEY_LEFT_GUI);
+                  Keyboard.press (KEY_LEFT_SHIFT);
+                  Keyboard.print('s');    
                 break;
               case 2: 
-                Keyboard.press('b');
+//                Pegar
+                Serial.println("Pegar");
+                Keyboard.press(KEY_LEFT_CTRL);  
+                Keyboard.print('v');
                 break;             
               case 3: 
-                Keyboard.press('c');   
+//                Copiar
+                Serial.println("Copiar");
+                Keyboard.press(KEY_LEFT_CTRL);  
+                Keyboard.print('c'); 
                 break;
               case 4: 
-                Keyboard.press('d');   
+//                Guardar  
+                Serial.println("Guardar");
+                Keyboard.press(KEY_LEFT_CTRL);  
+                Keyboard.print('s');  
                 break;  
               case 5: 
-                Keyboard.press('f');   
+                Serial.println("F13");
+                Keyboard.press(KEY_F13);    
                 break; 
               case 6: 
-                Keyboard.press('g');   
+                Serial.println("F14");
+                Keyboard.press(KEY_F14);   
                 break;    
-              case 7: 
-                Keyboard.press('h');   
+              case 7:
+                Serial.println("F15"); 
+                Keyboard.press(KEY_F15);   
                 break;
               case 8: 
-                Keyboard.press('i');   
+                Serial.println("F18");
+                Keyboard.press(KEY_F18);   
                 break;
               case 9: 
-                Keyboard.press('j');   
+                Serial.println("F17");
+                Keyboard.press(KEY_F17);   
                 break;
               case 10: 
-                Keyboard.press('k');   
+                Serial.println("F16");
+                Keyboard.press(KEY_F16);   
                 break;
                }
           // Si el estado es 1
           } else if (modePushCounter == 1) {
            switch (i) {
             case 0: 
-              Keyboard.press('a');
+//            Cortar
+              Keyboard.press(KEY_LEFT_GUI);
+              Keyboard.print('x');
             break;            
             case 1: 
-              Keyboard.press('a');
+//            Captura de pantalla
+              Keyboard.press (KEY_LEFT_GUI);
+              Keyboard.press (KEY_LEFT_SHIFT);
+              Keyboard.print(3);
               break;
             case 2: 
-              Keyboard.press('b');
+//            Pegar
+              Keyboard.press(KEY_LEFT_GUI);
+              Keyboard.print('x');
               break;             
             case 3: 
-              Keyboard.press('c');   
+//            Copiar
+              Keyboard.press(KEY_LEFT_GUI);
+              Keyboard.print('x');  
               break;
             case 4: 
-              Keyboard.press('d');   
+//            Guardar
+              Keyboard.press(KEY_LEFT_GUI);
+              Keyboard.print('s');   
               break;  
             case 5: 
-              Keyboard.press('f');   
+                Keyboard.press(KEY_F13);   
               break; 
             case 6: 
-              Keyboard.press('g');   
+                Keyboard.press(KEY_F14);
               break;    
             case 7: 
-              Keyboard.press('h');   
+                Keyboard.press(KEY_F15);
               break;
             case 8: 
-              Keyboard.press('i');   
+                Keyboard.press(KEY_F18);   
               break;
             case 9: 
-              Keyboard.press('j');   
+                Keyboard.press(KEY_F17);
               break;
             case 10: 
-              Keyboard.press('k');   
+                Keyboard.press(KEY_F16);     
               break;
              }
           }
