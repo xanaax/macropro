@@ -133,12 +133,12 @@ void loop()
             case 2: 
 //            Pegar
               Keyboard.press(KEY_LEFT_GUI);
-              Keyboard.print('x');
+              Keyboard.print('v');
               break;             
             case 3: 
 //            Copiar
               Keyboard.press(KEY_LEFT_GUI);
-              Keyboard.print('x');  
+              Keyboard.print('c');  
               break;
             case 4: 
 //            Guardar
@@ -148,7 +148,7 @@ void loop()
             case 5: 
                 Keyboard.press(KEY_F13);   
               break; 
-            case 6: 
+            case 6: s
                 Keyboard.press(KEY_F14);
               break;    
             case 7: 
