@@ -121,7 +121,7 @@ void loop()
            switch (i) {
             case 0: 
 //            Cortar
-              Keyboard.press(KEY_LEFT_GUI);
+              Keyboard.press(KEY_LEFT_CTRL); 
               Keyboard.print('x');
             break;            
             case 1: 
@@ -132,17 +132,17 @@ void loop()
               break;
             case 2: 
 //            Pegar
-              Keyboard.press(KEY_LEFT_GUI);
+              Keyboard.press(KEY_LEFT_CTRL); 
               Keyboard.print('v');
               break;             
             case 3: 
 //            Copiar
-              Keyboard.press(KEY_LEFT_GUI);
+              Keyboard.press(KEY_LEFT_CTRL); 
               Keyboard.print('c');  
               break;
             case 4: 
 //            Guardar
-              Keyboard.press(KEY_LEFT_GUI);
+              Keyboard.press(KEY_LEFT_CTRL); 
               Keyboard.print('s');   
               break;  
             case 5: 
