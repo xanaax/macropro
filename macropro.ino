@@ -148,7 +148,7 @@ void loop()
             case 5: 
                 Keyboard.press(KEY_F13);   
               break; 
-            case 6: s
+            case 6:
                 Keyboard.press(KEY_F14);
               break;    
             case 7: 
